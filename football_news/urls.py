@@ -1,3 +1,7 @@
+...
+from django.urls import path, include
+...
+
 """
 URL configuration for football_news project.
 
@@ -19,4 +23,5 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('main.urls')),
 ]
